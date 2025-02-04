@@ -1,7 +1,7 @@
 ## Usage
 Run the script with the following arguments:
 
-python script.py <crypto_pair> <operator> <price> <interval>
+```python script.py <crypto_pair> <operator> <price> <interval>```
 
 ### Arguments:
 - `<crypto_pair>`: Trading pair (e.g., `BTC-USDT`).
