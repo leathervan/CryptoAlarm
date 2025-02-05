@@ -3,6 +3,7 @@ import time
 import argparse
 import winsound
 import sys
+import datetime
 
 def get_price(crypto):
     url = f"https://www.okx.com/api/v5/market/ticker?instId={crypto}"
@@ -20,6 +21,7 @@ def main():
     args = parser.parse_args()
 
     while True:
+        print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), end=' ')
         try:
             price = get_price(args.crypto)
             print(f"Цена {args.crypto}: {price} USDT")
